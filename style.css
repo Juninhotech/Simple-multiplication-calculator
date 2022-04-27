@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Lily+Script+One&family=Megrim&family=Modak&family=Montserrat:wght@700&family=Slackey&display=swap');
+
+.main {
+    width: 400px;
+    /* height: 500px; */
+    background-color: #130912;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 30px 20px;
+}
+
+#input1,#input2 {
+    width: 95%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: none;
+    padding: 10px;
+    border-bottom: 2px solid white;
+    outline: hidden;
+    height: 30px;
+    font-size: 1.6rem;
+}
+
+#sub {
+    padding: 10px;
+    display: block;
+    margin: 10px auto;
+    width: 40%;
+    border-radius: 20px;
+    border: none;
+    font-size: 1.2rem;
+    font-family: 'Carter One', cursive;
+}
+
+#sub:hover {
+    background-color: yellow;
+}
+
+
+label {
+    color: white;
+    font-family: 'Carter One', cursive;
+    font-size: 1rem;
+}
+
+h2 {
+    font-size: 1.9rem;
+    margin-top: 0px;
+    font-family: 'Lily Script One', cursive;
+    font-weight: 800;
+    color: white;
+    text-align: center;
+
+}
+
+/* Aninamtion section */
+
+.ss1 {
+    animation: mystyle2 1s;
+    position: relative;
+    animation-iteration-count: infinite;
+}
+.ss2 {
+    animation: mystyle2 1s;
+    position: relative;
+    animation-iteration-count: infinite;
+}
+.ss3 {
+    animation: mystyle2 1s;
+    position: relative;
+    animation-iteration-count: infinite;
+}
+
+.ss1{animation-timing-function: ease;}
+.ss2{animation-timing-function: ease-in;}
+.ss3{animation-timing-function: ease-out;}
+
+@keyframes mystyle2{
+    from{left: 0px;}
+    to{left: 5px;}
+}
+
+
+
+h3 {
+    font-family: 'Carter One', cursive;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 20px 0 0 30px;
+}
+
+.result {
+    display: flex;
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    /* display: none; */
+}
