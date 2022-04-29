@@ -83,6 +83,17 @@ h2 {
     to{left: 5px;}
 }
 
+.jspan {
+    animation-name: jay;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes jay {
+    0%{background-color: blueviolet;}
+    25%{background-color: rgb(233, 236, 13);}
+    75%{background-color: rgb(13, 236, 32);}
+}
+
 
 
 h3 {
