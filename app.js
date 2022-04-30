@@ -1,16 +1,17 @@
 const myForm = document.querySelector('form');
 const resultDiv = document.querySelector('.result');
+const subbtn = document.querySelector('#sub');
 
 
 myForm.addEventListener('submit', (juninho) => {
     juninho.preventDefault();
   
   let myScore = {
-      score1: parseFloat(myForm.input1.value),
-      score2: parseFloat(myForm.input2.value),
+      score1: (myForm.input1.value),
+      score2: (myForm.input2.value),
 
       totalScore() {
-          return  parseFloat(myScore['score1'] * myScore['score2']).toLocaleString('en');
+          return  (myScore['score1'] * myScore['score2']).toLocaleString('en');
         }
     };
 
@@ -25,6 +26,17 @@ myForm.addEventListener('submit', (juninho) => {
   document.getElementById('rb').textContent = gbogboScore(myScore.totalScore());
   
 });
+
+function resetKey() {
+  document.getElementById('sub2').addEventListener('click', () => {
+    myForm.reset();
+    document.getElementById('rb').textContent = '';
+  
+  })
+  
+}
+resetKey();
+
 
 
 

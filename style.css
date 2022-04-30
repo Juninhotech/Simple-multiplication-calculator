@@ -24,9 +24,10 @@
     font-size: 1.6rem;
 }
 
-#sub {
+
+#sub,#sub2 {
     padding: 10px;
-    display: block;
+    /* display: block; */
     margin: 10px auto;
     width: 40%;
     border-radius: 20px;
